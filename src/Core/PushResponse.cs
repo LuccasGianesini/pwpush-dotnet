@@ -1,6 +1,6 @@
 ﻿namespace PwPush.Core;
 
-public class PushResponse
+public record PushResponse
 {
     public int expire_after_days { get; set; }
     public int expire_after_views { get; set; }

@@ -2,8 +2,7 @@ using CommandLine;
 
 namespace PwPush.Core;
 
-// [Verb("push", isDefault: true, HelpText = "Pushes a new secret to a PwPush server")]
-public sealed class PushOptions
+public sealed record PushOptions
 {
     [Option('d', "days", Required = false, HelpText = "Number of days to keep the secret alive (1-90)", Default = 1)]
     public int Days { get; set; } = 1;

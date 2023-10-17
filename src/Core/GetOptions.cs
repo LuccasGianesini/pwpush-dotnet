@@ -1,7 +1,6 @@
 using CommandLine;
 namespace PwPush.Core;
 
-[Verb("get", isDefault: false, HelpText = "Gets a secret from a PwPush server")]
 public sealed class GetOptions
 {
     [Option('p', "password", Required = false, HelpText = "The user defined password required to access the value of the secret")]

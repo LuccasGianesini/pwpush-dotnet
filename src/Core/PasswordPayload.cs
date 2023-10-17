@@ -1,6 +1,6 @@
 namespace PwPush.Core;
 
-public sealed class PasswordPayload
+public sealed record PasswordPayload
 {
     public string Payload { get; init; }
     public int ExpireAfterDays { get; init; }
